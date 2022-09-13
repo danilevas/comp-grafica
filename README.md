@@ -16,12 +16,10 @@ comp-grafica 2022.2
         <p>Pressione: "r", "g", "b" ou "w"</p>
         <p>Pressione "a" para inverter o sentido da rotação.</p>
 
-        <script src="cuon-matrix.js"></script>
-        <script src="rotatingSquare.js"></script>
+        <script src="trabalho1-daniel-levacov/cuon-matrix.js"></script>
+        <script src="trabalho1-daniel-levacov/rotatingSquare.js"></script>
         <script>
             window.onload = mainEntrance;
         </script>
     </body>
 </html>
-
-banana!
