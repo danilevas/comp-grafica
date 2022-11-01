@@ -277,7 +277,7 @@ var feetMatrixLocal = new Matrix4().setScale(3, 1, 6);
  * Adjusts object rotations.
  * @param {KeyboardEvent} event key pressed.
  */
-var arc = false;
+var my_arc = false;
 
 function handleKeyPress(event) {
     var ch = getChar(event);
@@ -337,9 +337,6 @@ function handleKeyPress(event) {
             leftLegMatrix.setTranslate(-2, -11, 0).multiply(currentLegsRot);
             rightLegMatrix.setTranslate(2, -11, 0).multiply(currentLegsRot);
             break;
-        // case " ":
-        //     this.arc = !this.arc;
-        //     break;
         default:
             return;
     }
@@ -486,7 +483,7 @@ var meu_rotator = new SimpleRotator(meu_canvas, animate);
  var animate = function () {
     draw();
     requestAnimationFrame(animate, meu_canvas);
-    if(arc){
+    if(my_arc){
         torsoMatrix.elements = meu_rotator.getViewMatrix();
     }
 };
